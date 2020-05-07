@@ -4,7 +4,7 @@ import "log"
 
 var persistent YellowPages
 
-func LoaPersistent() YellowPages {
+func LoadPersistent() YellowPages {
 	var err error
 	if persistent == nil {
 		if persistent, err = NewYellowPages(); err != nil {
